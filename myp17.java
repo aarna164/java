@@ -1,9 +1,9 @@
-import java.util.Scanner;
+import java.util.Scanner;//asking for a utilities toolbox(mainly scanner tool)
 
 public class myp17 {
     //Reverse the array
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);//input system(System.in)
         System.out.print("Enter size of aaray: ");
         int n = sc.nextInt();
         int[] arr = new int[n];

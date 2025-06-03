@@ -4,10 +4,10 @@ public class myp19 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter size of array:");
-        int n= sc.nextInt();
-        int[] arr1 = new int[n];
-        int[] arr2 = new int[n];
-        boolean isEqual = java.util.Arrays.equals(arr1, arr2);
+        int n= sc.nextInt();//size of arrays
+        int[] arr1 = new int[n];// arr1 =[0,0,0]
+        int[] arr2 = new int[n];// arr2 =[0,0,0]
+        boolean isEqual = java.util.Arrays.equals(arr1, arr2);//Since both arrays contain [0, 0, 0] initially, this returns true.
  if (isEqual) {
     System.out.println("Arrays are equal");
  } else {
