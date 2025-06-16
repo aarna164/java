@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class myp20 {
-    // merge two arrays
+public class myp21 {
+    //Common Elements in Two Arrays
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -23,19 +23,15 @@ public class myp20 {
             arr2[i] = sc.nextInt();
         }
 
-        // Merging arrays
-        int[] merged = new int[n1 + n2];
+        // Finding common elements
+        System.out.print("Common elements: ");
         for (int i = 0; i < n1; i++) {
-            merged[i] = arr1[i];
-        }
-        for (int i = 0; i < n2; i++) {
-            merged[n1 + i] = arr2[i];
-        }
-
-        // Output merged array
-        System.out.print("Merged array: ");
-        for (int val : merged) {
-            System.out.print(val + " ");
+            for (int j = 0; j < n2; j++) {
+                if (arr1[i] == arr2[j]) {
+                    System.out.print(arr1[i] + " ");
+                    break; // Avoid duplicates in output
+                }
+            }
         }
 
         sc.close();
